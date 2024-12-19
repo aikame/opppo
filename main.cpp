@@ -1,5 +1,5 @@
 
-double my_pow(double n, int m) {
+double my_pow_bug_fix(double n, int m) {
     if (m > 1)
         return my_pow(n*n, m-1);
     if (m == 1)
