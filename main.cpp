@@ -1,5 +1,5 @@
 
-double my_pow(double n, unsigned int m) {
+double my_pow_fast(double n, unsigned int m) {
     long res = 1;
     while (m) {
         if (m % 2 == 0) {
