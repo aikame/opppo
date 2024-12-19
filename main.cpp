@@ -1,9 +1,15 @@
 
 double my_pow(double n, unsigned int m) {
-    if (m > 1)
-        return my_pow(n*n, m-1);
-    if (m == 1)
-        return n;
-    if (m == 0)
-        return 1;
+    long res = 1;
+    while (m) {
+        if (m % 2 == 0) {
+            m /= 2;
+            n *= n;
+        }
+        else {
+            n--;
+            res *= n;
+        }
+    }
+    return res;
 }
